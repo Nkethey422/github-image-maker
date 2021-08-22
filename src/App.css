@@ -1,0 +1,59 @@
+.container {
+  background-color: lightcoral;
+  height: 100vh;
+  width: auto;
+  display: grid;
+  grid-template: 1fr 4fr 1fr 1fr / 100%;
+  grid-template-areas:
+    "title"
+    "grid"
+    "button"
+    "footer";
+}
+
+.title {
+  background-color: white;
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  background-color: white;
+  grid-area: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridspace {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 400px;
+}
+
+.test {
+  height: 80px;
+  width: 80px;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: white;
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: white;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
